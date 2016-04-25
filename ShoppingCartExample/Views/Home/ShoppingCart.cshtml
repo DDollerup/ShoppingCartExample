@@ -1,0 +1,23 @@
+﻿@model List<ShoppingCartExample.Models.BaseModels.Shoe>
+
+@{
+    ViewBag.Title = "ShoppingCart";
+}
+
+<h2>ShoppingCart</h2>
+
+@foreach (var shoe in Model)
+{
+    <table>
+        <tr>
+            <td>
+                @shoe.Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @shoe.Image
+            </td>
+        </tr>
+    </table>
+}
